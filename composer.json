@@ -1,5 +1,5 @@
 {
-    "name": "prezent/soap-client",
+    "name": "arbory/soap-client",
     "type": "library",
     "description": "Easily extendable SOAP client with WS-Addressing support",
     "keywords": ["soap", "wsa", "ws-addressing"],

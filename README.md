@@ -1,15 +1,8 @@
 Prezent SoapClient
 ==================
 
-The Prezent SoapClient is an extension to PHP's built-in SoapClient that brings easy
-extensability through an event dispatcher and built-in support for WS-Addressing.
+This is a fork of [prezent/soap-client](https://github.com/Prezent/soap-client) package.
 
-Installation
-------------
-
-```
-$ composer require prezent/soap-client
-```
 
 Example usage
 -------------

@@ -5,7 +5,7 @@
  * the MIT license.
  */
 
-namespace Prezent\Soap\Client\Tests\PHPUnit;
+namespace Arbory\Soap\Client\Tests\PHPUnit;
 
 use PHPUnit\Framework\AssertionFailedError;
 use PHPUnit\Framework\Test;

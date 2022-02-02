@@ -1,6 +1,6 @@
 <?php
 
-namespace Prezent\Soap\Client\Event;
+namespace Arbory\Soap\Client\Event;
 
 use Symfony\Contracts\EventDispatcher\Event;
 

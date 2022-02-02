@@ -1,6 +1,6 @@
 <?php
 
-namespace Prezent\Soap\Client\Tests\Fixtures\Server;
+namespace Arbory\Soap\Client\Tests\Fixtures\Server;
 
 // auto-detect URI
 $uri = 'http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['REQUEST_URI'], 0, -5);

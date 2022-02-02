@@ -1,18 +1,18 @@
 <?php
 
-namespace Prezent\Soap\Client\Tests\Extension;
+namespace Arbory\Soap\Client\Tests\Extension;
 
 use PHPUnit\Framework\TestCase;
-use Prezent\Soap\Client\SoapClient;
-use Prezent\Soap\Client\Event\CallEvent;
-use Prezent\Soap\Client\Event\FaultEvent;
-use Prezent\Soap\Client\Event\FinishEvent;
-use Prezent\Soap\Client\Event\RequestEvent;
-use Prezent\Soap\Client\Event\ResponseEvent;
-use Prezent\Soap\Client\Event\WsdlRequestEvent;
-use Prezent\Soap\Client\Event\WsdlResponseEvent;
-use Prezent\Soap\Client\Events;
-use Prezent\Soap\Client\Extension\WSAddressing;
+use Arbory\Soap\Client\SoapClient;
+use Arbory\Soap\Client\Event\CallEvent;
+use Arbory\Soap\Client\Event\FaultEvent;
+use Arbory\Soap\Client\Event\FinishEvent;
+use Arbory\Soap\Client\Event\RequestEvent;
+use Arbory\Soap\Client\Event\ResponseEvent;
+use Arbory\Soap\Client\Event\WsdlRequestEvent;
+use Arbory\Soap\Client\Event\WsdlResponseEvent;
+use Arbory\Soap\Client\Events;
+use Arbory\Soap\Client\Extension\WSAddressing;
 
 class WSAddressingTest extends TestCase
 {

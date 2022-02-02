@@ -1,11 +1,11 @@
 <?php
 
-namespace Prezent\Soap\Client\Extension;
+namespace Arbory\Soap\Client\Extension;
 
 use Ramsey\Uuid\Uuid;
-use Prezent\Soap\Client\Event\RequestEvent;
-use Prezent\Soap\Client\Event\WsdlResponseEvent;
-use Prezent\Soap\Client\Events;
+use Arbory\Soap\Client\Event\RequestEvent;
+use Arbory\Soap\Client\Event\WsdlResponseEvent;
+use Arbory\Soap\Client\Events;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**

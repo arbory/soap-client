@@ -12,7 +12,7 @@
             "email": "sander@prezent.nl"
         },
         {
-            "name": "Prezent Internet B.V.",
+            "name": "Arbory Internet B.V.",
             "email": "github@prezent.nl"
         }
     ],
@@ -26,7 +26,7 @@
         "phpunit/phpunit": "^9.4"
     },
     "autoload": {
-        "psr-4": { "Prezent\\Soap\\Client\\": "src/" }
+        "psr-4": { "Arbory\\Soap\\Client\\": "src/" }
     },
     "extra": {
         "branch-alias": {

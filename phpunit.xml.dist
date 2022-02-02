@@ -15,7 +15,7 @@
     </testsuites>
 
     <listeners>
-         <listener class="\Prezent\Soap\Client\Tests\PHPUnit\WebServerListener" />
+         <listener class="\Arbory\Soap\Client\Tests\PHPUnit\WebServerListener" />
     </listeners>
 
     <php>

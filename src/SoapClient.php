@@ -1,14 +1,14 @@
 <?php
 
-namespace Prezent\Soap\Client;
+namespace Arbory\Soap\Client;
 
-use Prezent\Soap\Client\Event\CallEvent;
-use Prezent\Soap\Client\Event\FaultEvent;
-use Prezent\Soap\Client\Event\FinishEvent;
-use Prezent\Soap\Client\Event\RequestEvent;
-use Prezent\Soap\Client\Event\ResponseEvent;
-use Prezent\Soap\Client\Event\WsdlRequestEvent;
-use Prezent\Soap\Client\Event\WsdlResponseEvent;
+use Arbory\Soap\Client\Event\CallEvent;
+use Arbory\Soap\Client\Event\FaultEvent;
+use Arbory\Soap\Client\Event\FinishEvent;
+use Arbory\Soap\Client\Event\RequestEvent;
+use Arbory\Soap\Client\Event\ResponseEvent;
+use Arbory\Soap\Client\Event\WsdlRequestEvent;
+use Arbory\Soap\Client\Event\WsdlResponseEvent;
 use SoapClient as BaseSoapClient;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;

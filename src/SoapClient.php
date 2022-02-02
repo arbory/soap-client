@@ -105,7 +105,7 @@ class SoapClient extends BaseSoapClient
 
         // Load WSDL using a data:// URI. This allows us to load the WSDL by any transport
         // instead of always using the built-in method. It also allows custom WSDL parsing
-        parent::SoapClient('data://text/xml;base64,' . base64_encode($this->getWsdl($wsdl)), $options);
+        parent::__construct('data://text/xml;base64,' . base64_encode($this->getWsdl($wsdl)), $options);
     }
 
     /**
@@ -135,7 +135,7 @@ class SoapClient extends BaseSoapClient
     /**
      * {@inheritDoc}
      */
-    public function __call($method, $args)
+    public function __call($method, $args): mixed
     {
         $event = new CallEvent($method, $args);
         $this->eventDispatcher->dispatch($event, Events::CALL);
@@ -152,7 +152,7 @@ class SoapClient extends BaseSoapClient
     /**
      * {@inheritDoc}
      */
-    public function __soapCall($method, $args, $options = [], $inputHeaders = [], &$outputHeaders = [])
+    public function __soapCall($method, $args, $options = [], $inputHeaders = [], &$outputHeaders = []): mixed
     {
         $event = new CallEvent($method, $args);
         $this->eventDispatcher->dispatch($event, Events::CALL);
@@ -175,7 +175,7 @@ class SoapClient extends BaseSoapClient
     /**
      * {@inheritDoc}
      */
-    public function __doRequest($request, $location, $action, $version, $oneWay = 0)
+    public function __doRequest($request, $location, $action, $version, $oneWay = 0): ?string
     {
         $dom = new \DOMDocument();
         $dom->loadXML($request);
@@ -190,7 +190,7 @@ class SoapClient extends BaseSoapClient
                 get_class($e)
             );
 
-            return;
+            return null;
         }
 
         if ($this->tracing) {
@@ -200,7 +200,7 @@ class SoapClient extends BaseSoapClient
 
         if (!$requestEvent->getResponse()) {
             $this->__soap_fault = new \SoapFault('Client', 'No response could be generated');
-            return;
+            return null;
         }
 
         try {
@@ -223,7 +223,7 @@ class SoapClient extends BaseSoapClient
                 get_class($e)
             );
 
-            return;
+            return null;
         }
 
         if ($this->tracing) {
